@@ -1,5 +1,3 @@
-import Dependencies._
-
 lazy val root = (project in file(".")).
   enablePlugins(JmhPlugin).
   settings(
@@ -11,6 +9,5 @@ lazy val root = (project in file(".")).
     name := "avro4s-bench",
     libraryDependencies ++= Seq(
       "com.sksamuel.avro4s" %% "avro4s-core" % "2.0.4-SNAPSHOT"
-    ),
-    libraryDependencies += scalaTest % Test
+    )
   )
